@@ -1,10 +1,1 @@
-[
-    {
-        "ConfigFile": "root\\server.conf",
-        "ConfigType": "ini",
-        "AutoMap": true,
-
-        "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?)\\s*=\\s*(?<value>.*?)$"
-    }
-]
+[]
