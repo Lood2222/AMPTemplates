@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "bin\\root\\server.conf",
+        "ConfigFile": "root\\server.conf",
         "ConfigType": "",
         "AutoMap": false
     }
