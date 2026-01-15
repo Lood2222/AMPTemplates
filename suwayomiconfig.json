@@ -26,9 +26,9 @@
         "IsFlagArgument": false,
         "ParamFieldName": "Xmx",
         "IncludeInCommandLine": true,
-        "DefaultValue": "2",
-        "Placeholder": "2",
-        "Suffix": "G",
+        "DefaultValue": "2048",
+        "Placeholder": "2048",
+        "Suffix": "M",
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {}
