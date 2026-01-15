@@ -1,35 +1,25 @@
 [
   {
-    "UpdateStageName": "Downloading",
+    "UpdateStageName": "DownloadAndExtract",
     "UpdateSourcePlatform": "Windows",
     "UpdateSource": "GithubRelease",
     "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
     "UpdateSourceData": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": false,
-    "OneShot": false,
-    "UpdateSourceTarget": "Suwayomi-Server-v2.1.1867-windows-x64.zip"
-  },
-  {
-    "UpdateStageName": "Extracting",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "ExtractArchive",
-    "UpdateSourceArgs": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": false,
-    "UpdateSourceConditionSetting": "GithubDownload",
-    "UpdateSourceConditionValue": "true",
+    "UpdateSourceTarget": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
     "DeleteAfterExtract": true,
     "OneShot": false,
     "UpdateStageArgs": "serverfiles"
   },
   {
-    "UpdateStageName": "MoveFilesToServerfiles",
+    "UpdateStageName": "FlattenExtractedFolder",
     "UpdateSourcePlatform": "Windows",
     "UpdateSource": "Executable",
-    "UpdateSourceData": "cmd.exe",
-    "UpdateSourceArgs": "/c move /Y serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\\* serverfiles\\ && rmdir /S /Q serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64",
+    "UpdateSourceData": "powershell.exe",
+    "UpdateSourceArgs": "-NoProfile -NonInteractive -ExecutionPolicy Bypass -Command \"$src = Join-Path (Resolve-Path .\\) 'serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64'; if (Test-Path $src) { Get-ChildItem -Path $src -Force | ForEach-Object { Move-Item -LiteralPath $_.FullName -Destination (Join-Path (Resolve-Path .\\) 'serverfiles') -Force -ErrorAction SilentlyContinue } ; Remove-Item -LiteralPath $src -Recurse -Force }\"",
     "RunInBackground": false,
-    "OneShot": true
+    "OneShot": true,
+    "SkipOnFailure": false
   }
 ]
