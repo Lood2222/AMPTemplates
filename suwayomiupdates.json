@@ -3,7 +3,7 @@
         "UpdateStageName": "Downloading",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "GithubRelease",
-        "UpdateSourceData": ".*windows-x64.zip",
+        "UpdateSourceData": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
         "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
