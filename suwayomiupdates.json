@@ -4,7 +4,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "GithubRelease",
         "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
-        "UpdateSourceData": "Suwayomi-Server-*-windows-x64.zip",
+        "UpdateSourceData": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
