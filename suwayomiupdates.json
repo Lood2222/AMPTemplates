@@ -9,4 +9,5 @@
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": false,
         "OneShot": false
-    },
+    }
+]
