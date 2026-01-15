@@ -1,7 +1,7 @@
 [
     {
         "ConfigFile": "root\\server.conf",
-        "ConfigType": "",
-        "AutoMap": false
+        "ConfigType": "auto",
+        "AutoMap": true
     }
 ]
