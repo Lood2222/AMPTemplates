@@ -1,0 +1,36 @@
+[
+    {
+        "DisplayName": "MIN RAM",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "min,ram",
+        "FieldName": "Xms",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "Xms",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "512",
+        "Placeholder": "512",
+        "Suffix": "M",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "MAX RAM",
+        "Category": "Server Settings",
+        "Description": "",
+        "Keywords": "max,ram",
+        "FieldName": "Xmx",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "Xmx",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "2",
+        "Placeholder": "2",
+        "Suffix": "G",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {}
+    }
+]
