@@ -1,7 +1,7 @@
 Meta.DisplayName=Suwayomi
 Meta.Description=Suwayomi Server
 Meta.Arch=x86_64
-Meta.Author=1: Lood2222
+Meta.Author=Lood2222
 Meta.URL=https://suwayomi.org/
 Meta.MinAMPVersion=2.4.6.6
 Meta.SpecificDockerImage=
