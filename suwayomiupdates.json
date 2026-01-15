@@ -1,25 +1,22 @@
 [
-  {
-    "UpdateStageName": "DownloadAndExtract",
-    "UpdateSourcePlatform": "Windows",
-    "UpdateSource": "GithubRelease",
-    "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
-    "UpdateSourceData": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
-    "UpdateSourceTarget": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
-    "UnzipUpdateSource": true,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": true,
-    "OneShot": false,
-    "UpdateStageArgs": "serverfiles"
-  },
-  {
-    "UpdateStageName": "FlattenExtractedFolder",
-    "UpdateSourcePlatform": "Windows",
-    "UpdateSource": "Executable",
-    "UpdateSourceData": "powershell.exe",
-    "UpdateSourceArgs": "-NoProfile -NonInteractive -ExecutionPolicy Bypass -Command \"$src = Join-Path (Resolve-Path .\\) 'serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64'; if (Test-Path $src) { Get-ChildItem -Path $src -Force | ForEach-Object { Move-Item -LiteralPath $_.FullName -Destination (Join-Path (Resolve-Path .\\) 'serverfiles') -Force -ErrorAction SilentlyContinue } ; Remove-Item -LiteralPath $src -Recurse -Force }\"",
-    "RunInBackground": false,
-    "OneShot": true,
-    "SkipOnFailure": false
-  }
+    {
+        "UpdateStageName": "Downloading",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
+        "UpdateSourceData": "Suwayomi-Server-*-windows-x64.zip",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+	{
+        "UpdateStageName": "MoveFilesToServerfiles",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/c move /Y \"serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\\*\" \"serverfiles\" && rmdir /S /Q \"serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\""
+        "RunInBackground": false,
+        "OneShot": true
+    }
 ]
