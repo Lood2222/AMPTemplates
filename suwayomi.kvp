@@ -80,5 +80,16 @@ App.ExecutableWin=serverfiles\java.exe
 App.ExecutableLinux=serverfiles/java
 App.LinuxCommandLineArgs=
 App.Ports=@IncludeJson[suwayomiports.json]
-App.UpdateSources=@IncludeJson[suwayomiupdates.json]
+App.UpdateSources=[
+    {
+        "UpdateStageName": "Downloading",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
+        "UpdateSourceData": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
 App.EnvironmentVariables={"LD_LIBRARY_PATH": "{{$FullBaseDir}}linux64:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%", "WINEPREFIX": "{{$FullRootDir}}.wine", "WINEARCH": "win64", "WINEDEBUG": "-all"}
