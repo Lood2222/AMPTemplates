@@ -9,14 +9,5 @@
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": false
-    },
-	{
-        "UpdateStageName": "MoveFilesToServerfiles",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/c move /Y \"serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\\*\" \"serverfiles\" && rmdir /S /Q \"serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\""
-        "RunInBackground": false,
-        "OneShot": true
     }
 ]
