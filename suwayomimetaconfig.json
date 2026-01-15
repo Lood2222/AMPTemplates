@@ -3,31 +3,8 @@
         "ConfigFile": "root\\server.conf",
         "ConfigType": "ini",
         "AutoMap": true,
-        "Params": [
-            {
-                "ParamFieldName": "server.ip",
-                "Value": "0.0.0.0"
-            },
-            {
-                "ParamFieldName": "server.authMode",
-                "Value": "none"
-            },
-            {
-                "ParamFieldName": "server.authUsername",
-                "Value": ""
-            },
-            {
-                "ParamFieldName": "server.authPassword",
-                "Value": ""
-            },
-            {
-                "ParamFieldName": "server.downloadsPath",
-                "Value": ""
-            },
-            {
-                "ParamFieldName": "server.extensionRepos",
-                "Value": "[]"
-            }
-        ]
+
+        "ConfigFormat": "{0} = {1}",
+        "ConfigFormatRegex": "^(?<key>.+?)\\s*=\\s*(?<value>.*?)$"
     }
 ]
