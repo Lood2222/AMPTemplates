@@ -3,23 +3,10 @@
         "UpdateStageName": "Downloading",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "GithubRelease",
-        "UpdateSourceData": " Suwayomi-Server-*windows-x64.zip",
+        "UpdateSourceData": "windows-x64.zip",
         "UpdateSourceArgs": "Suwayomi/Suwayomi-Server",
-        "UnzipUpdateSource": false,
+        "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": false
     },
-    {
-        "UpdateStageName": "Extracting",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "Suwayomi-Server-v2.1.1867-windows-x64.zip",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "GithubDownload",
-        "UpdateSourceConditionValue": "true",
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    }
-]
