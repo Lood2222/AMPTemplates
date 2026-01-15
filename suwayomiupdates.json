@@ -15,7 +15,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/c echo TEST > archivo_de_prueba.txt",
+        "UpdateSourceArgs": "/c move /Y \"suwayomi\\serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\\*\" \"suwayomi\\serverfiles\" && rmdir /S /Q \"suwayomi\\serverfiles\\Suwayomi-Server-v2.1.1867-windows-x64\"",
         "RunInBackground": false,
         "OneShot": true
   }
