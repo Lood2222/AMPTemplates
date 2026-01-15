@@ -15,7 +15,7 @@ App.AdminMethod=STDIO
 App.HasReadableConsole=true
 App.HasWritableConsole=false
 App.DisplayName=Suwayomi
-App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}} -Dsuwayomi.tachidesk.config.server.rootDir="root" -jar bin\Suwayomi-Server.jar
+App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}} -Dsuwayomi.tachidesk.config.server.rootDir="./root" -jar bin\Suwayomi-Server.jar
 App.WindowsCommandLineArgs=
 App.CommandLineParameterFormat=-{0}{1}
 App.CommandLineParameterDelimiter= 
