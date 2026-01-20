@@ -76,7 +76,7 @@ App.RootDir=./rclone/
 Meta.DisplayImageSource=url:
 App.BaseDirectory=./rclone/serverfiles/
 App.WorkingDir=serverfiles
-App.ExecutableWin=serverfiles=\rclone.exe
+App.ExecutableWin=serverfiles\rclone.exe
 App.ExecutableLinux=serverfiles/
 App.LinuxCommandLineArgs=
 App.Ports=@IncludeJson[rcloneports.json]
