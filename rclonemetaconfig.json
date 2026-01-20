@@ -1,0 +1,7 @@
+[
+    {
+        "ConfigFile": "./data/rclone.conf",
+        "ConfigType": "ini",
+        "AutoMap": true
+    }
+]
