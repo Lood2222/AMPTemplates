@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "./data/rclone.conf",
+        "ConfigFile": "./rclone-v1.72.1-windows-amd64/data/rclone.conf",
         "ConfigType": "ini",
         "AutoMap": true
     }
