@@ -8,5 +8,15 @@
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
-    }
+    },
+	{
+		"UpdateStageName": "MoveRcloneToServerfiles",
+		"UpdateSourcePlatform": "Windows",
+		"UpdateSource": "Executable",
+		"UpdateSourceData": "cmd.exe",
+		"UpdateSourceArgs": "/c for /d %i in (\"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v*-windows-amd64\") do robocopy \"%i\\%~nxi\" \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" /MOVE /E & rmdir /S /Q \"%i\\%~nxi\"",
+		"RunInBackground": false,
+		"OneShot": true
+	}
+
 ]
