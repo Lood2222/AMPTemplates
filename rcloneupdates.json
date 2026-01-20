@@ -1,12 +1,11 @@
 [
     {
-        "UpdateStageName": "",
+        "UpdateStageName": "Download",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "rclone-v1.72.1-windows-amd64.zip",
-        "UpdateSourceArgs": "rclone/rclone/",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://downloads.rclone.org/rclone-current-windows-amd64.zip",
         "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": false,
+        "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
     }
