@@ -10,11 +10,11 @@
         "OneShot": false
     },
 	{
-		"UpdateStageName": "MoveRcloneToServerfiles",
+		"UpdateStageName": "MoveFilesToServerfiles",
 		"UpdateSourcePlatform": "Windows",
 		"UpdateSource": "Executable",
 		"UpdateSourceData": "cmd.exe",
-		"UpdateSourceArgs": "/c for /d %i in (\"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v*-windows-amd64\") do (if exist \"%i\\%~nxi\" robocopy \"%i\\%~nxi\" \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" /MOVE /E /R:0 /W:0) & if exist \"%i\\%~nxi\" rd /S /Q \"%i\\%~nxi\" & robocopy \"%i\" \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" /MOVE /E /R:0 /W:0 & cd /d \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" & if exist \"%i\" rd /S /Q \"%i\"",
+		"UpdateSourceArgs": "/c robocopy \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v1.72.1-windows-amd64\" \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" /MOVE /E & if exist \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v1.72.1-windows-amd64\" rmdir /S /Q \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v1.72.1-windows-amd64\"",
 		"RunInBackground": false,
 		"OneShot": true
 	}
