@@ -14,7 +14,7 @@
 		"UpdateSourcePlatform": "Windows",
 		"UpdateSource": "Executable",
 		"UpdateSourceData": "cmd.exe",
-		"UpdateSourceArgs": "/c for /d %i in (\"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v*-windows-amd64\") do robocopy \"%i\" \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" /MOVE /E & rmdir /S /Q \"%i\"",
+		"UpdateSourceArgs": "/c for /d %i in (\"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\\rclone-v*-windows-amd64\") do if exist \"%i\" robocopy \"%i\" \"G:\\AMPDatastore\\Instances\\Rclone01\\rclone\\serverfiles\" /MOVE /E & if exist \"%i\" rmdir /S /Q \"%i\"",
 		"RunInBackground": false,
 		"OneShot": true
 	}
