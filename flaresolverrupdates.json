@@ -5,7 +5,6 @@
     "UpdateSource": "GithubRelease",
     "UpdateSourceArgs": "FlareSolverr/FlareSolverr",
     "UpdateSourceData": "flaresolverr_windows_x64.zip",
-    "UpdateSourceTarget": "serverfiles",
     "UnzipUpdateSource": true,
     "OverwriteExistingFiles": true
   }
