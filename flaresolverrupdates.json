@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "FlareSolverr",
+    "OS": "Windows",
+    "VersionSource": "https://api.github.com/repos/FlareSolverr/FlareSolverr/releases/latest",
+    "DownloadURLRegex": "https://github\\.com/FlareSolverr/FlareSolverr/releases/download/.*/FlareSolverr-Windows-x64\\.zip",
+    "ExecutablePath": "FlareSolverr-Windows-x64\\flaresolverr.exe",
+    "Extract": true
+  }
+]
